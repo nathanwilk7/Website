@@ -20,13 +20,13 @@ createSchemaStatement:
       CREATE [ OR REPLACE ] SCHEMA [ IF NOT EXISTS ] name
 
 createTableStatement:
-      CREATE TABLE [ IF NOT EXISTS ] name
+      CREATE TABLE [ IF NOT EXISTS ] [ schemaName . ] name
       [ '(' tableElement [, tableElement ]* ')' ]
       [ ON STORE store ]
       [ PARTITION BY ( HASH | RANGE | LIST ) '(' columnName ')' [PARTITIONS numberPartitions | with (partitionName1, partitionName2 [, partitionNameN]* )] ]
 
 createViewStatement:
-      CREATE VIEW [ OR REPLACE ] name
+      CREATE VIEW [ OR REPLACE ] [ schemaName . ] name
       [ '(' tableElement [, tableElement ]* ')' ]
       [ AS query ]
 
@@ -36,16 +36,16 @@ tableElement:
   |   UNIQUE '(' columnName [, columnName ]* ')'
 
 dropSchemaStatement:
-      DROP SCHEMA [ IF EXISTS ] name
+      DROP SCHEMA [ IF EXISTS ] [ schemaName . ] name
 
 dropTableStatement:
-      DROP TABLE [ IF EXISTS ] name
+      DROP TABLE [ IF EXISTS ] [ schemaName . ] name
 
 dropViewStatement:
-      DROP VIEW [ IF EXISTS ] name
+      DROP VIEW [ IF EXISTS ] [ schemaName . ] name
       
 truncateTableStatement:
-      TRUNCATE TABLE name
+      TRUNCATE TABLE [ schemaName . ] name
 
 alterStatement:
        ALTER SCHEMA schemaName RENAME TO newSchemaName  
