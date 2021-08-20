@@ -3,7 +3,7 @@ layout: plain
 title: Basics
 ---
 
-This page gives an basic overview on PolySQL, the SQL dialect of Polypheny.
+This page gives a basic overview on PolySQL, the SQL dialect of Polypheny.
 
 
 ## Identifiers
