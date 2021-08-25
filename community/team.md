@@ -8,6 +8,8 @@ These are the people contributing to Polypheny:
 | Name                | GitHub                                               | 
 |:--------------------|:-----------------------------------------------------|
 | Khushbu Agrawal     |                                                      |
+| Shubham Arawkar     | [@earthshakira](https://github.com/earthshakira)     |
+| Vishal Dalwadi      | [@vishaldalwadi](https://github.com/VishalDalwadi)   |
 | Christian Frei      | [@christianfrei](https://github.com/christianfrei)   |
 | Isabel Geissmann    | [@isabelge](https://github.com/isabelge)             |
 | Nils Hansen         | [@nilshansen94](https://github.com/nilshansen94)     |
@@ -19,6 +21,7 @@ These are the people contributing to Polypheny:
 | David Lengweiler    | [@datomo](https://github.com/datomo)                 |
 | Sebastian Philipp   | [@s3lph](https://github.com/s3lph)                   |
 | Jonas Rudin         | [@jonasrudin](https://github.com/jonasrudin)         |
+| Harshit Sharma      | [@s-harshit](https://github.com/S-Harshit)           |
 | Jan Schönholz       | [@schoenja](https://github.com/schoenja)             |
 | Heiko Schuldt       |                                                      |
 | Alexander Stiemer   | [@nouda](https://github.com/nouda)                   |
