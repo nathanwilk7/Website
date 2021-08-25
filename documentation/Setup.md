@@ -7,7 +7,7 @@ The easiest way to setup Polypheny-DB is to use [Polypheny Control](https://gith
 
 
 ### Requirements
-To build and start Polypheny-DB using Polypheny Control you need to have Java JDK in Version 9 or higher installed on your system.
+To build and start Polypheny-DB using Polypheny Control you need to have a Java JDK of version 11 or higher installed on your system.
 Thanks to [JGit](https://github.com/eclipse/jgit), Polypheny Control contains a pure Java implementation of Git. Therefore, it is no longer required to have Git installed on the system.
 
 
