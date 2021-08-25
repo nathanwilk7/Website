@@ -67,7 +67,7 @@ alterStatement:
      | ALTER TABLE [ schemaName . ] tableName DROP PRIMARY KEY
      | ALTER TABLE [ schemaName . ] tableName ADD CONSTRAINT constraintName UNIQUE ( columnName| '(' columnName [ , columnName ]* ')' )
      | ALTER TABLE [ schemaName . ] tableName DROP CONSTRAINT constraintName
-     | ALTER TABLE [ schemaName . ] tableName ADD CONSTRAINT foreignKeyName FOREIGN KEY ( columnName | '(' columnName [ , columnName ]* ')' ) REFERENCES [ schemaName . ] tableName '(' columnName [ , columnName ]* ')' [ ON UPDATE ( CASCADE | RESTRICT | SET NULL | SET DEFAULT ) ] [ ON DELETE ( CASCADE | RESTRICT | SET NULL | SET DEFAULT ) ]
+     | ALTER TABLE [ schemaName . ] tableName ADD CONSTRAINT foreignKeyName FOREIGN KEY ( columnName | '(' columnName [ , columnName ]* ')' ) REFERENCES [ schemaName . ] tableName '(' columnName [ , columnName ]* ')' [ ON UPDATE ( NONE | RESTRICT ) ] [ ON DELETE ( NONE | RESTRICT ) ]
      | ALTER TABLE [ schemaName . ] tableName DROP FOREIGN KEY foreignKeyName
      | ALTER TABLE [ schemaName . ] tableName ADD [UNIQUE] INDEX indexName ON ( columnName | '(' columnName [ , columnName ]* ')' ) [ USING indexMethod ] [ ON STORE storeUniqueName ]
      | ALTER TABLE [ schemaName . ] tableName DROP INDEX indexName

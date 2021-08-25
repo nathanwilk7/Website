@@ -44,10 +44,8 @@ The operator precedence and associativity, highest to lowest.
 | value1 IS NOT DISTINCT FROM value2                | Whether two values are equal, treating null values as the same
 | value1 BETWEEN value2 AND value3                  | Whether *value1* is greater than or equal to *value2* and less than or equal to *value3*
 | value1 NOT BETWEEN value2 AND value3              | Whether *value1* is less than *value2* or greater than *value3*
-| string1 LIKE string2 [ ESCAPE string3 ]           | Whether *string1* matches pattern *string2*
-| string1 NOT LIKE string2 [ ESCAPE string3 ]       | Whether *string1* does not match pattern *string2*
-| string1 SIMILAR TO string2 [ ESCAPE string3 ]     | Whether *string1* matches regular expression *string2*
-| string1 NOT SIMILAR TO string2 [ ESCAPE string3 ] | Whether *string1* does not match regular expression *string2*
+| string1 LIKE string2 [ ESCAPE escape_character ]           | Whether *string1* matches pattern *string2*
+| string1 NOT LIKE string2 [ ESCAPE escape_character ]       | Whether *string1* does not match pattern *string2*
 | value IN (value [, value]*)                       | Whether *value* is equal to a value in a list
 | value NOT IN (value [, value]*)                   | Whether *value* is not equal to every value in a list
 | value IN (sub-query)                              | Whether *value* is equal to a row returned by *sub-query*
@@ -94,7 +92,7 @@ comp:
 | numeric1 % numeric2       | As *MOD(numeric1, numeric2)* 
 | POWER(numeric1, numeric2) | Returns *numeric1* raised to the power of *numeric2*
 | ABS(numeric)              | Returns the absolute value of *numeric*
-| MOD(numeric1, numeric2)   | Returns the remainder (modulus) of *numeric1* divided by *numeric2*. The result is negative only if *numeric1* is negative
+| MOD(numeric1, numeric2)   | Returns the remainder (modulus) of *numeric1* divided by *numeric2*. The result is negative only if *numeric1* is negative. *numeric1* and *numeric2* need to be of an exact numeric type.
 | SQRT(numeric)             | Returns the square root of *numeric*
 | LN(numeric)               | Returns the natural logarithm (base *e*) of *numeric*
 | LOG10(numeric)            | Returns the base 10 logarithm of *numeric*
@@ -110,15 +108,21 @@ comp:
 | COS(numeric)              | Returns the cosine of *numeric*
 | COT(numeric)              | Returns the cotangent of *numeric*
 | DEGREES(numeric)          | Converts *numeric* from radians to degrees
-| PI()                      | Returns a value that is closer than any other value to *pi*
 | RADIANS(numeric)          | Converts *numeric* from degrees to radians
 | ROUND(numeric1 [, numeric2]) | Rounds *numeric1* to optionally *numeric2* (if not specified 0) places right to the decimal point
 | SIGN(numeric)             | Returns the signum of *numeric*
 | SIN(numeric)              | Returns the sine of *numeric*
 | TAN(numeric)              | Returns the tangent of *numeric*
 | TRUNCATE(numeric1 [, numeric2]) | Truncates *numeric1* to optionally *numeric2* (if not specified 0) places right to the decimal point
-| distance(array1, array2, metric) | See [kNN Search](KNN.md) for details.
-| distance(array1, array2, metric, weights) | See [kNN Search](KNN.md) for details.
+| DISTANCE(array1, array2, metric) | See [kNN Search](KNN.md) for details.
+| DISTANCE(array1, array2, metric, weights) | See [kNN Search](KNN.md) for details.
+
+
+### Constants
+
+| Constant                  | Description
+|:------------------------- |:-----------
+| PI                        | Value that is closer than any other value to *pi*
 
 
 ### Character string operators and functions
@@ -131,7 +135,6 @@ comp:
 | UPPER(string)              | Returns a character string converted to upper case
 | LOWER(string)              | Returns a character string converted to lower case
 | POSITION(string1 IN string2) | Returns the position of the first occurrence of *string1* in *string2*
-| POSITION(string1 IN string2 FROM integer) | Returns the position of the first occurrence of *string1* in *string2* starting at a given point (not standard SQL)
 | TRIM( { BOTH &#124; LEADING &#124; TRAILING } string1 FROM string2) | Removes the longest string containing only the characters in *string1* from the start/end/both ends of *string1*
 | OVERLAY(string1 PLACING string2 FROM integer [ FOR integer2 ]) | Replaces a substring of *string1* with *string2*
 | SUBSTRING(string FROM integer)  | Returns a substring of a character string starting at a given point
@@ -152,7 +155,6 @@ comp:
 | CURRENT_TIMESTAMP         | Alias for LOCALTIMESTAMP.
 | EXTRACT(timeUnit FROM timestamp) | Extracts and returns the value of a specified timestamp field from a timestamp value expression.
 | FLOOR(timestamp TO timeUnit) | Rounds *timestamp* down to *timeUnit*.
-| CEIL(timestamp TO timeUnit) | Rounds *timestamp* up to *timeUnit*.
 | YEAR(date)                | Equivalent to `EXTRACT(YEAR FROM date)`. Returns an integer.
 | QUARTER(date)             | Equivalent to `EXTRACT(QUARTER FROM date)`. Returns an integer between 1 and 4.
 | MONTH(date)               | Equivalent to `EXTRACT(MONTH FROM date)`. Returns an integer between 1 and 12.
@@ -164,7 +166,7 @@ comp:
 | MINUTE(date)              | Equivalent to `EXTRACT(MINUTE FROM date)`. Returns an integer between 0 and 59.
 | SECOND(date)              | Equivalent to `EXTRACT(SECOND FROM date)`. Returns an integer between 0 and 59.
 | TIMESTAMPADD(timeUnit, integer, timestamp) | Returns *timestamp* with an interval of (signed) *integer* *timeUnit*s added.
-| TIMESTAMPDIFF(timeUnit, timestamp, timestamp2) | Returns the (signed) number of *timeUnit* intervals between *timestamp* and *timestamp2*. Equivalent to `(timestamp2 - timestamp) timeUnit`
+| TIMESTAMPDIFF(timeUnit, timestamp, timestamp2) | Returns the (signed) number of *timeUnit* intervals between *timestamp* and *timestamp2*.
 
 
 ### System functions
