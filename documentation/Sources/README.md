@@ -6,6 +6,7 @@ title: Data Sources
 Polypheny currently supports the following data source adapters:
 
 * [CSV Adapter]{:.heading.flip-title} --- An adapter for querying CSV files.
+* [Ethereum Adapter]{:.heading.flip-title} --- A data source adapter for querying the Ethereum blockchain.
 * [MariaDB / MySQL Adapter]{:.heading.flip-title} --- Data source adapter for the relational database systems MariaDB and MySQL..
 * [MonetDB Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remore MonetDB instace.
 * [PostgreSQL Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remore PostgreSQL database.
@@ -14,6 +15,7 @@ Polypheny currently supports the following data source adapters:
 
 
 [CSV Adapter]: CSV.md
+[Ethereum Adapter]: Ethereum.md
 [MariaDB / MySQL Adapter]: MySQL.md
 [MonetDB Adapter]: MonetDB.md
 [PostgreSQL Adapter]: Postgres.md
