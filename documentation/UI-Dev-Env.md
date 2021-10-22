@@ -77,12 +77,11 @@ The test-helper is started by executing `./gradlew run` (Linux / macOS) or `grad
 **Important:** ```TestHelper.java``` needs to be executed after running Polypheny-DB and before running Cypress so that the required tables or schemas can be created.
 
 
-### Cypress can be started using
-
+### Start Cypress
+Cypress can be started using
 ```
 npx Cypress open
 ```
-
 Once the test runner is up, you can choose to run one or several tests by selecting them from the interface. Click on one of them and the test will start.
 
 
