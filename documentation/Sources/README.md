@@ -8,8 +8,8 @@ Polypheny currently supports the following data source adapters:
 * [CSV Adapter]{:.heading.flip-title} --- An adapter for querying CSV files.
 * [Ethereum Adapter]{:.heading.flip-title} --- A data source adapter for querying the Ethereum blockchain.
 * [MariaDB / MySQL Adapter]{:.heading.flip-title} --- Data source adapter for the relational database systems MariaDB and MySQL..
-* [MonetDB Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remore MonetDB instace.
-* [PostgreSQL Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remore PostgreSQL database.
+* [MonetDB Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remote MonetDB instance.
+* [PostgreSQL Adapter]{:.heading.flip-title} --- Allows querying and modifying tables on a remote PostgreSQL database.
 * [Query File System (QFS)]{:.heading.flip-title} --- Maps a filesystem path as relational table and allows querying it.
 {:.related-posts.faded}
 
