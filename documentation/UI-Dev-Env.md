@@ -78,7 +78,11 @@ The test-helper is started by executing `./gradlew run` (Linux / macOS) or `grad
 
 
 ### Cypress can be started using
-    ```npx Cypress open```
+
+```
+npx Cypress open
+```
+
 Once the test runner is up, you can choose to run one or several tests by selecting them from the interface. Click on one of them and the test will start.
 
 
@@ -88,5 +92,4 @@ Once the test runner is up, you can choose to run one or several tests by select
 - Click on the test
 - Start to add some code
 
-**For executing queries for SQL tests in Cypress you can use the following command replacing the ````"query"```` with the query you want to execute**
-    `cy.window().invoke("executeQuery", "query");`
+For executing queries for SQL tests in Cypress you can use the following command replacing the ````"query"```` with the query you want to execute `cy.window().invoke("executeQuery", "query");`
