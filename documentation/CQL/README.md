@@ -11,6 +11,10 @@ This implementation of CQL for Polypheny was part of [Vishal Dalwadi's](https://
 {:.note}
 
 
+* this unordered seed list will be replaced by toc as unordered list
+{:toc}
+
+
 
 ## Basics
 
