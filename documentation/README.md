@@ -12,12 +12,9 @@ Here you should be able to find everything you need to know to use and interact 
 
 ## Getting started
 * [Setup]{:.heading.flip-title} --- How to setup and run Polypheny.
-{:.related-posts.faded}
-
-
-## Using Polypheny-DB
 * [Data Types]{:.heading.flip-title} --- Overview on the type system.
 * [Schema Model]{:.heading.flip-title} --- Overview on the schema model.
+{:.related-posts.faded}
 
 
 ## Query Languages
@@ -46,9 +43,9 @@ Here you should be able to find everything you need to know to use and interact 
 
 
 [Setup]: Setup.md
-
 [Data Types]: Types.md
 [Schema Model]: SchemaModel.md
+
 [PolySQL]: PolySQL/README.md
 [MongoQL]: MongoQl/README.md
 [REST]: REST/README.md

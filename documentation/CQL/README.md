@@ -93,7 +93,8 @@ ModifierValue:
     String value with or without double quotes.
 ```
 
-- `Filters`: Filters are used to do comparisons on a column in the `Relation`. They are similar to SQL's WHERE clause.
+### Filters
+Filters are used to do comparisons on a column in the `Relation`. They are similar to SQL's WHERE clause.
 If `Relation` is specified, the column must be from the relation specified. Comparisons can be between literal
 values or columns; however, support for comparisons with columns is still underway. Comparisons like equals,
 not equal, less than, greater than, less than or equals and greater than or equals can be done with support for
@@ -102,25 +103,30 @@ operators; however, support for PROX is still underway. Boolean operators' prece
 First occurring boolean operator has higher precedence than those occurring later. However, this can be change by
 using parenthesis.
 
-- `Relation`: Relation is the final table that the query would be executed on. So the relation is a combination of
+### Relation
+Relation is the final table that the query would be executed on. So the relation is a combination of
 multiple tables. The combination operation can be a join, union, intersection, set-difference, etc; however, 
 implementation of set operations as combiners is still underway. The actual combiner keyword used is AND or OR.
 For joins, AND means a INNER join, whereas OR means a FULL, LEFT or RIGHT join. The combiner also takes modifiers
 used to modify its execution. The two modifiers currently supported are: `null` and `on`.
 
-  The `null` modifier is to be used with OR combiner to specify which of the rows can be null. Possible values of
+The `null` modifier is to be used with OR combiner to specify which of the rows can be null. Possible values of
   `null` modifier are: `both` (FULL join), `right` (LEFT join) or `left` (RIGHT join).
 
-  The `on` modifier is used to specify the columns to join on. It only works if the column(s) belong to both the
+The `on` modifier is used to specify the columns to join on. It only works if the column(s) belong to both the
 tables. Possible values of `on` modifier are: `all` (finds the common columns between two tables; Default for AND),
 `none` (Default for OR), comma-separated list of column names (for example, 'name,id').
   
-- `Sort Specification`: Sort specification is used to specify a space separated column list on which to sort the query
-output. These columns must be projected if a projection clause is specified.
 
-- `Projection`: Projection is used to specify the columns for the result. It is also used for aggregations and grouping.
+### Sort Specification
+Sort specification is used to specify a space separated column list on which to sort the query output. These columns must be projected if a projection clause is specified.
 
-Example queries:
+### Projection
+Projection is used to specify the columns for the result. It is also used for aggregations and grouping.
+
+
+
+## Example queries:
 
 Consider a schema "public" with tables "employee" and "dept" defined as follows:
 
@@ -143,30 +149,35 @@ PRIMARY KEY (empno) );
 
 Then the following CQL queries can be executed on the schema.
 
-- Find employee named "Loki":
-`public.employee.empname == "Loki"`
-
-- Find all employees in the HR department that are married:
-`public.dept.deptname == "HR" and public.employee.married == TRUE`
-
-- Find all employees from the HR or IT department:
-`public.dept.deptname == "HR" or public.dept.deptname == "IT" relation public.employee and public.dept`
-
-- Find all employees from all departments except HR:
-`public.employee.empno >= 1 NOT public.dept.deptname == "HR"`
-
-- Count the number of employees:
-`relation public.employee project public.employee.empno/count`
-
-- Get all the employee names sorted by date of birth:
-`relation public.employee sortby public.employee.dob project public.employee.empname`
-
-- Count the number of employees in each department:
-`relation public.employee project public.employee.empno/count public.employee.deptno`
+Find employee named "Loki":
+```public.employee.empname == "Loki"```
 
 
+Find all employees in the HR department that are married:
+```public.dept.deptname == "HR" and public.employee.married == TRUE```
 
-## Future Plans and Nice-to-have features
+Find all employees from the HR or IT department:
+```public.dept.deptname == "HR" or public.dept.deptname == "IT" relation public.employee and public.dept```
+
+
+Find all employees from all departments except HR:
+```public.employee.empno >= 1 NOT public.dept.deptname == "HR"```
+
+
+Count the number of employees:
+```relation public.employee project public.employee.empno/count```
+
+
+Get all the employee names sorted by date of birth:
+```relation public.employee sortby public.employee.dob project public.employee.empname```
+
+
+Count the number of employees in each department:
+```relation public.employee project public.employee.empno/count public.employee.deptno```
+
+
+
+## Future plans and nice-to-have features
 
 - Optimize Combiner's `getCommonColumns` by creating a cache.
 - Support for Column Filters.
