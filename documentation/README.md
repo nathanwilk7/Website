@@ -18,6 +18,9 @@ Here you should be able to find everything you need to know to use and interact 
 ## Using Polypheny-DB
 * [Data Types]{:.heading.flip-title} --- Overview on the type system.
 * [Schema Model]{:.heading.flip-title} --- Overview on the schema model.
+
+
+## Query Languages
 * [PolySQL]{:.heading.flip-title} --- The Polypheny SQL dialect
 * [MongoQL]{:.heading.flip-title} --- Documentation for the MongoDB Query Language.
 * [REST]{:.heading.flip-title} --- How to use the REST-based query interface.
@@ -25,7 +28,7 @@ Here you should be able to find everything you need to know to use and interact 
 {:.related-posts.faded}
 
 
-## Administration
+## Data Storage
 * [Data Stores]{:.heading.flip-title} --- Supported data stores.
 * [Data Sources]{:.heading.flip-title} --- Available data source adapters.
 {:.related-posts.faded}
