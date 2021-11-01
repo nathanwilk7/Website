@@ -150,30 +150,44 @@ PRIMARY KEY (empno) );
 Then the following CQL queries can be executed on the schema.
 
 Find employee named "Loki":
-```public.employee.empname == "Loki"```
+```
+public.employee.empname == "Loki"
+```
 
 
 Find all employees in the HR department that are married:
-```public.dept.deptname == "HR" and public.employee.married == TRUE```
+```
+public.dept.deptname == "HR" and public.employee.married == TRUE
+```
 
 Find all employees from the HR or IT department:
-```public.dept.deptname == "HR" or public.dept.deptname == "IT" relation public.employee and public.dept```
+```
+public.dept.deptname == "HR" or public.dept.deptname == "IT" relation public.employee and public.dept
+```
 
 
 Find all employees from all departments except HR:
-```public.employee.empno >= 1 NOT public.dept.deptname == "HR"```
+```
+public.employee.empno >= 1 NOT public.dept.deptname == "HR"
+```
 
 
 Count the number of employees:
-```relation public.employee project public.employee.empno/count```
+```
+relation public.employee project public.employee.empno/count
+```
 
 
 Get all the employee names sorted by date of birth:
-```relation public.employee sortby public.employee.dob project public.employee.empname```
+```
+relation public.employee sortby public.employee.dob project public.employee.empname
+```
 
 
 Count the number of employees in each department:
-```relation public.employee project public.employee.empno/count public.employee.deptno```
+```
+relation public.employee project public.employee.empno/count public.employee.deptno
+```
 
 
 
