@@ -6,7 +6,7 @@ title: Data Manipulation
 ## Modifying Data
 
 ### INSERT
-There are to commands for inserting data into collections.
+There are two commands for inserting data into collections.
 To insert multiple records at ones, the following command can be used:
 
 ```db.collection.insertMany( <array> )```

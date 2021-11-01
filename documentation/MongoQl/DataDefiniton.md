@@ -4,7 +4,7 @@ title: Schema Creation and Modification
 ---
 
 ### CREATE
-As mentioned in (Basics)[Basics.md], the term `database` is mapped to `schema` in Polypheny.
+As mentioned in [Basics](Basics.md), the term `database` is mapped to `schema` in Polypheny.
 To select a database, the following command can be used:
 
 ```use database```

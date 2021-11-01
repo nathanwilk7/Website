@@ -49,7 +49,7 @@ Here you should be able to find everything you need to know to use and interact 
 [PolySQL]: PolySQL/README.md
 [MongoQL]: MongoQl/README.md
 [REST]: REST/README.md
-[REST]: CQL/README.md
+[CQL]: CQL/README.md
 
 [Data Stores]: Stores/README.md
 [Data Sources]: Sources/README.md
