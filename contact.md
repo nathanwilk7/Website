@@ -18,4 +18,4 @@ Spiegelgasse 1, CH-4051 Basel, Switzerland
 
 
 ## Email
-[dbis-cs@unibas.ch](mailto:dbis-cs@unibas.ch)
+[mail@polypheny.org](mailto:mail@polypheny.org)
