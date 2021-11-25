@@ -14,11 +14,11 @@ Here you should be able to find everything you need to know to use and interact 
 * [Setup]{:.heading.flip-title} --- How to setup and run Polypheny.
 * [Data Types]{:.heading.flip-title} --- Overview on the type system.
 * [Schema Model]{:.heading.flip-title} --- Overview on the schema model.
+* [Data Partitioning]{:.heading.flip-title} -- Overview on Polypheny's partition essentials.
 {:.related-posts.faded}
 
-
 ## Query Languages
-* [PolySQL]{:.heading.flip-title} --- The Polypheny SQL dialect
+* [PolySQL]{:.heading.flip-title} --- The Polypheny SQL dialect.
 * [MongoQL]{:.heading.flip-title} --- Documentation for the MongoDB Query Language.
 * [REST]{:.heading.flip-title} --- How to use the REST-based query interface.
 * [CQL]{:.heading.flip-title} --- Documentation for the Contextual Query Language.
@@ -45,6 +45,7 @@ Here you should be able to find everything you need to know to use and interact 
 [Setup]: Setup.md
 [Data Types]: Types.md
 [Schema Model]: SchemaModel.md
+[Data Partitioning]: DataPartitioning.md
 
 [PolySQL]: PolySQL/README.md
 [MongoQL]: MongoQl/README.md
