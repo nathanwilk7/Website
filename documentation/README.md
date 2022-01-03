@@ -18,8 +18,8 @@ Here you should be able to find everything you need to know to use and interact 
 
 ## Schema Model
 * [Basics]{:.heading.flip-title} --- Overview on the schema model.
-* [Data Partitioning]{:.heading.flip-title} -- Overview on Polypheny's partition essentials.
-* [Views]{:.heading.flip-title} -- (Materialized) views in Polypheny.
+* [Data Partitioning]{:.heading.flip-title} --- Overview on Polypheny's partition essentials.
+* [Views]{:.heading.flip-title} --- (Materialized) views in Polypheny.
 {:.related-posts.faded}
 
 
@@ -51,7 +51,7 @@ Here you should be able to find everything you need to know to use and interact 
 [Setup]: Setup.md
 [Data Types]: Types.md
 
-[Schema Model]: SchemaModel.md
+[Basics]: SchemaModel.md
 [Data Partitioning]: DataPartitioning.md
 [Views]: Views.md
 

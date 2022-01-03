@@ -1,9 +1,6 @@
 ---
 layout: plain
 title:  Views
-description: >
-(Materialized) views in Polypheny.
-hide_description: true
 ---
 
 This page gives an overview on views and materialized views in Polypheny.  For instructions on creating and managing views, please see the dedicated documentation for [PolySQL](PolySQL/Views.md) and [MongoQL](MongoQl/DataDefiniton.md).

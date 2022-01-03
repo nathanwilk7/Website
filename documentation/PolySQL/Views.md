@@ -1,9 +1,6 @@
 ---
 layout: plain
 title:  Views
-description: >
-How to create (materialized) views.
-hide_description: true
 ---
 
 This page gives an overview on creating, altering and dropping views and materialized views in Polypheny using PolySQL. 
