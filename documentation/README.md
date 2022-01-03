@@ -13,9 +13,15 @@ Here you should be able to find everything you need to know to use and interact 
 ## Getting started
 * [Setup]{:.heading.flip-title} --- How to setup and run Polypheny.
 * [Data Types]{:.heading.flip-title} --- Overview on the type system.
-* [Schema Model]{:.heading.flip-title} --- Overview on the schema model.
-* [Data Partitioning]{:.heading.flip-title} -- Overview on Polypheny's partition essentials.
 {:.related-posts.faded}
+
+
+## Schema Model
+* [Basics]{:.heading.flip-title} --- Overview on the schema model.
+* [Data Partitioning]{:.heading.flip-title} -- Overview on Polypheny's partition essentials.
+* [Views]{:.heading.flip-title} -- (Materialized) views in Polypheny.
+{:.related-posts.faded}
+
 
 ## Query Languages
 * [PolySQL]{:.heading.flip-title} --- The Polypheny SQL dialect.
@@ -44,8 +50,10 @@ Here you should be able to find everything you need to know to use and interact 
 
 [Setup]: Setup.md
 [Data Types]: Types.md
+
 [Schema Model]: SchemaModel.md
 [Data Partitioning]: DataPartitioning.md
+[Views]: Views.md
 
 [PolySQL]: PolySQL/README.md
 [MongoQL]: MongoQl/README.md

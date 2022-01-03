@@ -9,6 +9,7 @@ title: PolySQL Query Language
 * [kNN Search]{:.heading.flip-title} --- How to use k-nearest-neighbour search in Polypheny.
 * [Mulimedia Metadata]{:.heading.flip-title} --- Inspecting multimedia data and retrieve meta information.
 * [Schema Manipulation]{:.heading.flip-title} --- The syntax for defining and manipulating the schema.
+* [Views]{:.heading.flip-title} --- How to create (materialized) views.
 * [System Management]{:.heading.flip-title} --- Managing Polypheny using SQL statements.
 {:.related-posts.faded}
 
@@ -19,4 +20,5 @@ title: PolySQL Query Language
 [kNN Search]: KNN.md
 [Mulimedia Metadata]: Meta.md
 [Schema Manipulation]: DDL.md
+[Views]: Views.md
 [System Management]: SystemManagement.md

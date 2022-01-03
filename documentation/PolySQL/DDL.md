@@ -11,6 +11,7 @@ statement:
   |   createSchemaStatement
   |   createTableStatement
   |   createViewStatement
+  |   createMaterializedViewStatement
   |   dropSchemaStatement
   |   dropTableStatement
   |   dropViewStatement
@@ -30,6 +31,13 @@ createViewStatement:
       [ '(' tableElement [, tableElement ]* ')' ]
       [ AS query ]
 
+createMaterializedViewStatement:
+	CREATE MATERIALIZED VIEW [ IF NOT EXISTS ] [ schemaName . ] name
+	[ '(' tableElement [, tableElement ]* ')' ]
+	[ AS query ]
+	[ <ON> <STORE> storeName ( <COMMA> storeName )*]
+	[ FRESHNESS (INTERVAL interval timeUnit | UPDATE interval | MANUAL ) ]
+
 tableElement:
       columnName type [ NOT ] NULL [ DEFAULT value ]
   |   PRIMARY KEY '(' columnName [, columnName ]* ')'
@@ -42,7 +50,7 @@ dropTableStatement:
       DROP TABLE [ IF EXISTS ] [ schemaName . ] name
 
 dropViewStatement:
-      DROP VIEW [ IF EXISTS ] [ schemaName . ] name
+      DROP [MATERIALIZED] VIEW [ IF EXISTS ] [ schemaName . ] name
       
 truncateTableStatement:
       TRUNCATE TABLE [ schemaName . ] name
@@ -78,6 +86,11 @@ alterStatement:
      | ALTER TABLE [ schemaName . ] tableName PARTITION BY ( HASH | RANGE | LIST) '(' columnName ')' [ PARTITIONS numPartitions | WITH '(' partitionName1, partitionName2 [, partitionNameN]* ')' ]
      | ALTER TABLE [ schemaName . ] tableName MERGE PARTITIONS
      | ALTER TABLE [ schemaName . ] tableName MODIFY PARTITIONS '(' partitionId [ , partitionId ]* ')' ON STORE storeUniqueName
-     | ALTER VIEW [ schemaName . ] tableName RENAME TO newTableName
-     | ALTER VIEW [ schemaName . ] tableName RENAME COLUMN columnName TO newColumnName
+     | ALTER VIEW [ schemaName . ] viewName RENAME TO newViewName
+     | ALTER VIEW [ schemaName . ] viewName RENAME COLUMN columnName TO newColumnName
+     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName RENAME TO newViewName
+     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName RENAME COLUMN columnName TO newColumnName
+     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName FRESHNESS MANUAL
+     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName ADD [UNIQUE] INDEX indexName ON ( columnName | '(' columnName [ , columnName ]* ')' ) [ USING indexMethod ] [ ON STORE storeUniqueName ]
+     | ALTER MATERIALIZED VIEW [ schemaName . ] viewName DROP INDEX indexName
 {% endhighlight %}
