@@ -46,6 +46,7 @@ Here you should be able to find everything you need to know to use and interact 
 * [Documentation Guidelines]{:.heading.flip-title} --- What and how to document.
 * [Dependency Management]{:.heading.flip-title} --- How we deal with dependencies.
 * [UI Development Environment]{:.heading.flip-title} --- Setup a Polypheny-UI development environment.
+* [Adapter Development]{:.heading.flip-title} --- Guidline for developing data store and data source adapters.
 {:.related-posts.faded}
 
 
@@ -72,4 +73,5 @@ Here you should be able to find everything you need to know to use and interact 
 [Documentation Guidelines]: Documentation.md
 [Dependency Management]: Dependencies.md
 [UI Development Environment]: UI-Dev-Env.md
+[Adapter Development]: AdapterDev.md
 
