@@ -1,12 +1,10 @@
 ---
 layout: plain
 title: Testing
-description: >
-How to use and extend the test pipelines.
-hide_description: true
 ---
 
 Polypheny-DB deploys has three independent test suites for testing different aspects:
+
 - Matrix   
 - Docker CI
 - Adapter Matrix CI
