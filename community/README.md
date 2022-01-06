@@ -22,5 +22,5 @@ On this page you find news on what happens around Polypheny.
 [Code of Conduct]: code_of_conduct.md
 [Logo]: logo.md
 [License]: license.md
-[Acknowledgements]: acknowledgements.md
+[Acknowledgements]: acknowledgements/README.md
 [Google Summer of Code]: gsoc/README.md
