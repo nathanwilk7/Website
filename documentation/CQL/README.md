@@ -18,7 +18,7 @@ This implementation of CQL for Polypheny was part of [Vishal Dalwadi's](https://
 
 ## Basics
 
-CQL can be executed using the query console provided by the Polypheny-UI. Additionally, Polypheny also supports an HTTP-Interface, which is able to handle CQL queries. After deploying the interface, CQL queries can be subnitted via HTTP POST request to the specified port (default: 1337) and the corresponding route (`/cql`). The query needs to be placed in the body of the POST request. The result is returned as JSON.
+CQL can be executed using the query console provided by the Polypheny-UI. Additionally, Polypheny also supports an HTTP-Interface, which is able to handle CQL queries. After deploying the interface, CQL queries can be subnitted via HTTP POST request to the specified port (default: 13137) and the corresponding route (`/cql`). The query needs to be placed in the body of the POST request. The result is returned as JSON.
 
 Polypheny's CQL implementation uses fully qualified names instead of indices. For example, column names like `public.emps.emp` and table names like `public.emps`.
 

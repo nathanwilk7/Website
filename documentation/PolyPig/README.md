@@ -1,6 +1,6 @@
 ---
 layout: plain
-title:  Pig
+title:  PolyPig
 ---
 
 Pig, often also Pig latin, was initially developed as a high-level abstraction language for working with MapReduce. The main focus of the language is to provide an easy way of writing powerful analytical query script in a structured fashion.
@@ -13,7 +13,7 @@ Due to this, the capabilities of the language are limited to querying, without t
 ## Basics
 
 PolyPig can directly be used through the console of the Polypheny-UI. 
-Additionally, Polypheny also supports an HTTP-Interface, capable of handling PolyPig queries. As soon as the interface is up and running, a PolyPig query can be submitted using HTTP POST requests to the specified port (default: 1337) and the corresponding route (`/pig`). The query needs to be placed in the body of the POST request. The result is returned as JSON.
+Additionally, Polypheny also supports an HTTP-Interface, capable of handling PolyPig queries. As soon as the interface is up and running, a PolyPig query can be submitted using HTTP POST requests to the specified port (default: 13137) and the corresponding route (`/pig`). The query needs to be placed in the body of the POST request. The result is returned as JSON.
 
 As mentioned before, PolyPig uses databases entities instead of physical files. 
 This means, a Pig query, which normally could look like this `A = LOAD 'hdfs://localhost:9000/pig_data/student.txt' USING
