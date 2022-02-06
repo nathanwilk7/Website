@@ -3,7 +3,10 @@ layout: plain
 title: Google Summer of Code
 ---
 
-Welcome to the Polypheny [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) 2021 project page.
+Welcome to the Polypheny [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) 2022 project page.
+
+Please note that our application for GSoC 2022 is currently under review at Google.
+{:.message}
 
 * this unordered seed list will be replaced by toc as unordered list
 {:toc}
@@ -11,7 +14,7 @@ Welcome to the Polypheny [Google Summer of Code (GSoC)](https://summerofcode.wit
 
 ## What is GSoC?
 
-[Google Summer of Code](https://summerofcode.withgoogle.com/) is designed to encourage student participation in open source development. Over the past 16 years, Google Summer of Code has brought together over 16,000 students and 715 open source projects to create over 38 millions of lines of code. Google will accept student applications from March 29 to April 13, 2021.
+[Google Summer of Code](https://summerofcode.withgoogle.com/) is designed to encourage the participation in open source software development. Over the past 17 years, Google Summer of Code has brought together over 18,000 students and 746 open source projects to create over 40 millions lines of code. Google will accept contributor applications from April 4 to April 19, 2022.
 
 
 ## Polypheny at GSoC
@@ -20,18 +23,18 @@ Polypheny-DB is a novel kind of database system bridging the gap between polysto
 
 As a polystore, Polypheny-DB seamlessly combines different underlying data storage engines (for instance relational row- and column store databases, key-value stores, etc.) to provide good query performance independent of the type of workload. Queries are accepted through multiple query interfaces using different query languages and methods.
 
-This is the first time Polypheny participates in the Google Summer of Code. As part of GSoC, we want to introduce new talents to the world of open source software development and to our community. 
+This is the second time Polypheny participates in the Google Summer of Code. As part of GSoC, we want to introduce new talents to the world of open source software development and to our community. 
 
 
 
-## Student Application
+## Application
 
-If you are interested in the Polypheny project and want to help us with improving and extending Polypheny-DB as part of GSoC we kindly ask you to carefully read and follow the outlined instructions.
+If you are interested in the Polypheny project and want to help us with improving and extending Polypheny-DB as part of GSoC we kindly ask you to carefully read and follow these instructions.
 
 Note that we have a [code of conduct](/community/code_of_conduct/). Please follow it in all your interactions with the project and our community.
 {:.message}
 
-We would like to incorporate and integrate you as early as possible into the development community of Polypheny. Therefore, we have decided not to add dedicated tests or puzzles which are unrelated to the actual code base. Rather, we have defined a list of [good first issues](https://github.com/polypheny/Polypheny-DB/issues?q=is%3Aissue+is%3Aopen+label%3AE-good-first-issue) that contain bugs that have a relatively limited scope and are thus very easy to fix. We consider this a great opportunity to get started and to familiarize with the code base.
+We would like to incorporate and integrate you as early as possible into our community. Therefore, we have decided not to add dedicated tests or puzzles which are unrelated to the actual code base. Rather, we have defined a list of [good first issues](https://github.com/polypheny/Polypheny-DB/issues?q=is%3Aissue+is%3Aopen+label%3AE-good-first-issue) that contain bugs that have a relatively limited scope and are thus very easy to fix. We consider this a great opportunity to get started and to familiarize with the code base.
 
 When you aim at fixing an issue, you are kindly asked to check the comment thread of the issue in case somebody is already working on a fix. If nobody is working on it at the moment, please leave a comment that indicates your intention to work on it. Please check the [contribution section](https://polypheny.org/community/contribute/) of our webpage for additional details. We are also glad if you leave a star on the Polypheny-DB repository.
 
@@ -44,8 +47,7 @@ Your proposal should include
 - details on how to implement your idea and
 - the GitHub id of your pull request.
 
-Please use the [this](https://docs.google.com/document/d/1Hf8GhAiBqfDsIlTqOD-8-f9cQ9F1JpOrJkzta4SLOwk) template for writing you proposal. 
-
+Please use [this](https://docs.google.com/document/d/1Hf8GhAiBqfDsIlTqOD-8-f9cQ9F1JpOrJkzta4SLOwk) template for writing your proposal. 
 
 
 
@@ -57,7 +59,7 @@ See [GSoC Project Ideas](/community/gsoc/ideas/) for a list of project ideas.
 
 ## Mentors
 
-This is the mentoring team for the Google Summer of Code 2021.
+This is the mentoring team for the Google Summer of Code 2022:
 
 | Name              | Role             | Languages       |
 |:------------------|:-----------------|:----------------|
@@ -74,7 +76,7 @@ This is the mentoring team for the Google Summer of Code 2021.
 
 ## Contact
 
-Please feel free to contact us if you have any questions. To make it easier for us to organize our emails, please add "GSoC 2021" in the subject line. 
+Please feel free to contact us if you have any questions. To make it easier for us to organize our emails, please add "GSoC 2022" in the subject line. 
 
-{% include button.html button_name="mail@polypheny.org" onclick="location.href='mailto:mail@polypheny.org?subject=[GSoC 2021]';" button_class="primary" %}
+{% include button.html button_name="mail@polypheny.org" onclick="location.href='mailto:mail@polypheny.org?subject=[GSoC 2022]';" button_class="primary" %}
 
