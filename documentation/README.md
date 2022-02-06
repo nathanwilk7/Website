@@ -32,6 +32,12 @@ Here you should be able to find everything you need to know to use and interact 
 {:.related-posts.faded}
 
 
+## Connectors & Drivers
+* [JDBC Driver]{:.heading.flip-title} --- Documentation for Polyhenys JDBC Driver.
+* [Python Connector]{:.heading.flip-title} --- Documentation on Polypheny Connector for Python
+{:.related-posts.faded}
+
+
 ## Data Storage
 * [Data Stores]{:.heading.flip-title} --- Supported data stores.
 * [Data Sources]{:.heading.flip-title} --- Available data source adapters.
@@ -62,6 +68,9 @@ Here you should be able to find everything you need to know to use and interact 
 [REST]: REST/README.md
 [CQL]: CQL/README.md
 [PolyPig]: PolyPig/README.md
+
+[JDBC Driver]: JDBCDriver/README.md
+[Python Connector]: PythonConnector/README.md
 
 [Data Stores]: Stores/README.md
 [Data Sources]: Sources/README.md
