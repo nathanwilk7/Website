@@ -69,8 +69,8 @@ Here you should be able to find everything you need to know to use and interact 
 [CQL]: CQL/README.md
 [PolyPig]: PolyPig/README.md
 
-[JDBC Driver]: JDBCDriver/README.md
-[Python Connector]: PythonConnector/README.md
+[JDBC Driver]: Drivers/JDBCDriver/README.md
+[Python Connector]: Drivers/PythonConnector/README.md
 
 [Data Stores]: Stores/README.md
 [Data Sources]: Sources/README.md

@@ -14,7 +14,7 @@ The connector supports developing applications using the Python Database API v2 
 The connector establishes access to Polypheny-DBs via the *Avatica general purpose interface*.
 
 For information about changes in the latest version of the Polypheny Connector for Python, see the 
-[Release Notes](https://github.com/polypheny/Polypheny-Connector-Python/blob/master/CHANGELOG.md)(GitHub)
+[Release Notes](https://github.com/polypheny/Polypheny-Connector-Python/blob/master/CHANGELOG.md) (GitHub)
 {:.message}
 
 * [Installation]{:.heading.flip-title} --- Installing the Python Connector.
