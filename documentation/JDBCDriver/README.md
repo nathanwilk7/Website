@@ -14,6 +14,10 @@ For information about changes in the latest version of the JDBC Driver, see the
 {:.message}
 
 * [Installation]{:.heading.flip-title} --- Installing the JDBC Driver.
+* [Getting Started]{:.heading.flip-title} --- Using the JDBC Driver.
+* [Tutorials]{:.heading.flip-title} --- Best practices for the JDBC Driver.
   {:.related-posts.faded}
 
 [Installation]: Installation.md
+[Getting Started]: GettingStarted.md
+[Tutorials]: Tutorials.md
