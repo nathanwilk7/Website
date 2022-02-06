@@ -12,10 +12,6 @@ The connector supports developing applications using the Python Database API v2 
 * Cursor objects for executing DDL/DML statements and queries, that are compliant with [*PolySQL*](https://polypheny.org/documentation/PolySQL/).
 
 The connector establishes access to Polypheny-DBs via the *Avatica general purpose interface*.
-<!--
-Uncomment as soon as PolyCLI project is live.
-[PolyCLI](https://github.com/polypheny/PolyCLI), the command line client provided by Polypheny, is an example of an application developed using the connector.
--->
 
 For information about changes in the latest version of the Polypheny Connector for Python, see the 
 [Release Notes](https://github.com/polypheny/Polypheny-Connector-Python/blob/master/CHANGELOG.md)(GitHub)
@@ -23,11 +19,8 @@ For information about changes in the latest version of the Polypheny Connector f
 
 * [Installation]{:.heading.flip-title} --- Installing the Python Connector.
 * [Getting Started]{:.heading.flip-title} --- Using the Python Connector.
-<!--* [Tutorials]{:.heading.flip-title} --- Best practices for the Python Connector.
-  {:.related-posts.faded}-->
-
+  {:.related-posts.faded}
 
 
 [Installation]: Installation.md
 [Getting Started]: GettingStarted.md
-<!--[Tutorials]: Tutorials.md-->
