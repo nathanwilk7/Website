@@ -1,6 +1,6 @@
 ---
 layout: plain
-title:  Downloading / Integrating the JDBC Driver
+title: Installing the JDBC Driver
 ---
 
 The JDBC driver (poylpheny-jdbc-driver) is provided as a JAR file, available as an artifact in Maven for download or integrating directly into your Java-based projects.
