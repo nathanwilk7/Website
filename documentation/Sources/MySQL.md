@@ -5,6 +5,9 @@ title: MariaDB / MySQL Adapter
 
 This adapter allows mapping existing tables on a remote MariaDB or MySQL database into the schema of Polypheny-DB. One adapter can map multiple tables. This allows push-down of larger portions of a query. While the schema must be static and cannot be changed with Polypheny-DB, the data on the remote tables can be updated independently of Polypheny-DB. Polypheny-DB connects to the remote database system as a client and providing full support for transactions.
 
+Please note that for license reasons, this adapter is not part of packed releases.
+{:.message}
+
 
 ## Adapter Settings
 
@@ -29,7 +32,7 @@ The adapter can either be deployed using the Polypheny-UI (Adapters -> Sources) 
 {% highlight sql %}
 ALTER ADAPTERS ADD uniqueName 
    USING 'org.polypheny.db.adapter.jdbc.sources.MysqlSource' 
-   WITH '{database:"polypheny",host:"localhost",maxConnections:"25",password:"polypheny",username:"polypheny",port:"3306",transactionIsolation:"SERIALIZABLE",tables:"foo,bar"}'
+   WITH '{mode:"remote",database:"polypheny",host:"localhost",maxConnections:"25",password:"polypheny",username:"polypheny",port:"3306",transactionIsolation:"SERIALIZABLE",tables:"foo,bar"}'
 {% endhighlight %}
 
 Please make sure to adjust the settings according to your needs.

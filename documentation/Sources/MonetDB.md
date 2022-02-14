@@ -28,7 +28,7 @@ The adapter can either be deployed using the Polypheny-UI (Adapters -> Sources) 
 {% highlight sql %}
 ALTER ADAPTERS ADD uniqueName 
    USING 'org.polypheny.db.adapter.jdbc.sources.MonetdbSource' 
-   WITH '{database:"polypheny",host:"localhost",maxConnections:"25",password:"polypheny",username:"polypheny",port:"50000",tables:"public.foo,public.bar"}'
+   WITH '{mode:"remote",database:"polypheny",host:"localhost",maxConnections:"25",password:"polypheny",username:"polypheny",port:"50000",tables:"public.foo,public.bar"}'
 {% endhighlight %}
 
 Please make sure to adjust the settings according to your needs.

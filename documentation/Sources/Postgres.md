@@ -29,7 +29,7 @@ The adapter can either be deployed using the Polypheny-UI (Adapters -> Sources) 
 {% highlight sql %}
 ALTER ADAPTERS ADD uniqueName 
    USING 'org.polypheny.db.adapter.jdbc.sources.PostgresqlSource' 
-   WITH '{database:"postgres",host:"localhost",maxConnections:"25",password:"polypheny",username:"postgres",port:"5432",transactionIsolation:"SERIALIZABLE",tables:"public.foo,public.bar"}'
+   WITH '{mode:"remote",database:"postgres",host:"localhost",maxConnections:"25",password:"polypheny",username:"postgres",port:"5432",transactionIsolation:"SERIALIZABLE",tables:"public.foo,public.bar"}'
 {% endhighlight %}
 
 Please make sure to adjust the settings according to your needs.

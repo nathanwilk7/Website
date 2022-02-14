@@ -60,7 +60,7 @@ id:long,name:string,level:int,birthday:date,fulltime:boolean,start:time,last_upd
 The adapter can either be deployed using the Polypheny-UI (Adapters -> Sources) or using the following SQL statement:
 
 {% highlight sql %}
-ALTER ADAPTERS ADD uniqueName USING 'org.polypheny.db.adapter.csv.CsvSource' WITH '{directory:"csvFolder",maxStringLength:"255"}'
+ALTER ADAPTERS ADD uniqueName USING 'org.polypheny.db.adapter.csv.CsvSource' WITH '{mode:"embedded",directory:"csvFolder",maxStringLength:"255"}'
 {% endhighlight %}
 
 Please make sure to adjust `csvFolder` and the `maxStringLength` according to your needs.
