@@ -24,7 +24,7 @@ author1:
   social:
     github:          polypheny/Polypheny-DB
     twitter:         polypheny
-    download:        https://get.polypheny.org
+    download:        /release
     # email:           <mail@domain.tld>
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
