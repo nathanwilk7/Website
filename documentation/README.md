@@ -57,7 +57,7 @@ Here you should be able to find everything you need to know to use and interact 
 {:.related-posts.faded}
 
 
-[Setup]: /release.md
+[Setup]: /release
 [Data Types]: Types.md
 
 [Basics]: SchemaModel.md
