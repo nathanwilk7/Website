@@ -19,7 +19,6 @@ For information about changes in the latest version of the Polypheny Connector f
 
 * **[Installation]** --- Installing the Python Connector.
 * **[Getting Started]** --- Using the Python Connector.
-{:.related-posts.faded}
 
 
 [Installation]: Installation.md
