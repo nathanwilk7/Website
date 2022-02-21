@@ -13,6 +13,7 @@ Polypheny currently supports the following data stores:
 * [MongoDB](Mongo.md)
 * PostgreSQL
 
+
 Data stores can be added using one of the following approaches. Not all approaches are supported by all adapters.
 
 * Embedded

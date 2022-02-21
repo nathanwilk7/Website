@@ -3,13 +3,13 @@ layout: plain
 title: MongoDB Query Language
 ---
 
-* [Basics]{:.heading.flip-title} --- Basic overview on the MongoDB Query Language.
-* [Syntax]{:.heading.flip-title} --- The syntax of our MongoDB Query Language adaptation.
-* [Data Definition]{:.heading.flip-title} --- How-to manipulate the schema.
-* [Data Manipulation]{:.heading.flip-title} --- How-to manipulate the data.
-* [Queries]{:.heading.flip-title} --- How-to query the data.
-* [Aggregation Pipeline]{:.heading.flip-title} --- Overview on the supported aggregation stages.
-  {:.related-posts.faded}
+* [Basics] --- Basic overview on the MongoDB Query Language.
+* [Syntax] --- The syntax of our MongoDB Query Language adaptation.
+* [Data Definition] --- How-to manipulate the schema.
+* [Data Manipulation] --- How-to manipulate the data.
+* [Queries] --- How-to query the data.
+* [Aggregation Pipeline] --- Overview on the supported aggregation stages.
+{:.related-posts.faded}
 
 
 [Basics]: Basics.md

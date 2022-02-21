@@ -11,49 +11,49 @@ Here you should be able to find everything you need to know to use and interact 
 
 
 ## Getting started
-* [Setup]{:.heading.flip-title} --- How to setup and run Polypheny.
-* [Data Types]{:.heading.flip-title} --- Overview on the type system.
+* [Setup] --- How to setup and run Polypheny.
+* [Data Types] --- Overview on the type system.
 {:.related-posts.faded}
 
 
 ## Schema Model
-* [Basics]{:.heading.flip-title} --- Overview on the schema model.
-* [Data Partitioning]{:.heading.flip-title} --- Overview on Polypheny's partition essentials.
-* [Views]{:.heading.flip-title} --- (Materialized) views in Polypheny.
+* [Basics] --- Overview on the schema model.
+* [Data Partitioning] --- Overview on Polypheny's partition essentials.
+* [Views] --- (Materialized) views in Polypheny.
 {:.related-posts.faded}
 
 
 ## Query Languages
-* [PolySQL]{:.heading.flip-title} --- The Polypheny SQL dialect.
-* [MongoQL]{:.heading.flip-title} --- Documentation for the MongoDB Query Language.
-* [REST]{:.heading.flip-title} --- How to use the REST-based query interface.
-* [CQL]{:.heading.flip-title} --- Documentation for the Contextual Query Language.
-* [PolyPig]{:.heading.flip-title} --- Documentation for the PolyPig Query Language.
+* [PolySQL] --- The Polypheny SQL dialect.
+* [MongoQL] --- Documentation for the MongoDB Query Language.
+* [REST] --- How to use the REST-based query interface.
+* [CQL] --- Documentation for the Contextual Query Language.
+* [PolyPig] --- Documentation for the PolyPig Query Language.
 {:.related-posts.faded}
 
 
 ## Connectors & Drivers
-* [JDBC Driver]{:.heading.flip-title} --- Documentation for Polyhenys JDBC Driver.
-* [Python Connector]{:.heading.flip-title} --- Documentation on Polypheny Connector for Python
+* [JDBC Driver] --- Documentation for Polyhenys JDBC Driver.
+* [Python Connector] --- Documentation on Polypheny Connector for Python
 {:.related-posts.faded}
 
 
 ## Data Storage
-* [Data Stores]{:.heading.flip-title} --- Supported data stores.
-* [Data Sources]{:.heading.flip-title} --- Available data source adapters.
+* [Data Stores] --- Supported data stores.
+* [Data Sources] --- Available data source adapters.
 {:.related-posts.faded}
 
 
 ## For developers
-* [Project Structure]{:.heading.flip-title} --- Basic overview on the different parts of Polypheny.
-* [GitHub Labels]{:.heading.flip-title} --- Best practices for handling issues and pull requests.
-* [Polypheny Control]{:.heading.flip-title} --- The automated build system used for benchmarking and testing Polypheny-DB.
-* [Testing]{:.heading.flip-title} --- Overview on the test suites.
-* [Logging]{:.heading.flip-title} --- Dealing with the logger.
-* [Documentation Guidelines]{:.heading.flip-title} --- What and how to document.
-* [Dependency Management]{:.heading.flip-title} --- How we deal with dependencies.
-* [UI Development Environment]{:.heading.flip-title} --- Setup a Polypheny-UI development environment.
-* [Adapter Development]{:.heading.flip-title} --- Guidline for developing data store and data source adapters.
+* [Project Structure] --- Basic overview on the different parts of Polypheny.
+* [GitHub Labels] --- Best practices for handling issues and pull requests.
+* [Polypheny Control] --- The automated build system used for benchmarking and testing Polypheny-DB.
+* [Testing] --- Overview on the test suites.
+* [Logging] --- Dealing with the logger.
+* [Documentation Guidelines] --- What and how to document.
+* [Dependency Management] --- How we deal with dependencies.
+* [UI Development Environment] --- Setup a Polypheny-UI development environment.
+* [Adapter Development] --- Guidline for developing data store and data source adapters.
 {:.related-posts.faded}
 
 
