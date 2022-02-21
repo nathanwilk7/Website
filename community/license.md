@@ -8,7 +8,7 @@ Polypheny-DB and most of the sub-projects of the Polypheny stack are licensed un
 
 ## Apache License
 
-Copyright 2019-2021 The Polypheny Project
+Copyright 2019-2022 The Polypheny Project
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ limitations under the License.
 
 ## MIT License
 
-Copyright (c) 2017-2021 The Polypheny Project
+Copyright (c) 2017-2022 The Polypheny Project
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

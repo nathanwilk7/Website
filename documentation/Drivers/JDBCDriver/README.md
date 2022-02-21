@@ -13,7 +13,6 @@ For information about changes in the latest version of the JDBC Driver, see the
 [Release Notes](https://github.com/polypheny/Polypheny-JDBC-Driver/blob/master/CHANGELOG.md)(GitHub)
 {:.message}
 
-* [Installation]{:.heading.flip-title} --- Installing the JDBC Driver.
-  {:.related-posts.faded}
+* **[Installation]** --- Installing the JDBC Driver.
 
 [Installation]: Installation.md
