@@ -17,9 +17,9 @@ For information about changes in the latest version of the Polypheny Connector f
 [Release Notes](https://github.com/polypheny/Polypheny-Connector-Python/blob/master/CHANGELOG.md) (GitHub)
 {:.message}
 
-* [Installation]{:.heading.flip-title} --- Installing the Python Connector.
-* [Getting Started]{:.heading.flip-title} --- Using the Python Connector.
-  {:.related-posts.faded}
+* **[Installation]** --- Installing the Python Connector.
+* **[Getting Started]** --- Using the Python Connector.
+{:.related-posts.faded}
 
 
 [Installation]: Installation.md
