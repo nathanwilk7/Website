@@ -47,6 +47,7 @@ Here you should be able to find everything you need to know to use and interact 
 ## For developers
 * [Project Structure]{:.heading.flip-title} --- Basic overview on the different parts of Polypheny.
 * [GitHub Labels]{:.heading.flip-title} --- Best practices for handling issues and pull requests.
+* [Polypheny Control]{:.heading.flip-title} --- The automated build system used for benchmarking and testing Polypheny-DB.
 * [Testing]{:.heading.flip-title} --- Overview on the test suites.
 * [Logging]{:.heading.flip-title} --- Dealing with the logger.
 * [Documentation Guidelines]{:.heading.flip-title} --- What and how to document.
@@ -56,7 +57,7 @@ Here you should be able to find everything you need to know to use and interact 
 {:.related-posts.faded}
 
 
-[Setup]: Setup.md
+[Setup]: /releases.md
 [Data Types]: Types.md
 
 [Basics]: SchemaModel.md
@@ -77,6 +78,7 @@ Here you should be able to find everything you need to know to use and interact 
 
 [Project Structure]: ProjectStructure.md
 [GitHub Labels]: Labels.md
+[Polypheny Control]: Polypheny-Control.md
 [Testing]: Testing.md
 [Logging]: Logging.md
 [Documentation Guidelines]: Documentation.md
