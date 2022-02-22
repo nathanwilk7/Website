@@ -7,7 +7,7 @@ The easiest way to setup Polypheny-DB is to use our [latest release](https://git
 
 
 ## Prerequisites
-Everything is completely self-contained and comes with its own JVM. The only dependency is Docker. However, Docker is only required for some features. We nevertheless recommend setting up Docker since it makes the deployment of stores more seamless. See [this](/documentation/Stores/Docker/) on how to setup Docker to use the built-in Docker-based data store deployment.
+Everything is completely self-contained and comes with its own JVM. The only dependency is Docker. However, Docker is only required for some features. We nevertheless recommend setting up Docker since it makes the deployment of stores more seamless. Please consult [this](/documentation/Stores/Docker/) on how to setup Docker for Polypheny-DB and to utilize the Docker-based data store deployment.
 
 
 ## Binaries
@@ -20,7 +20,7 @@ Please download the `.msi` file from the GitHub [release page](https://github.co
 Please download the `.dmg` file from the GitHub [release page](https://github.com/polypheny/Polypheny-DB/releases/latest). As usual, Polypheny-DB is installed by dragging the Polypheny icon on the application folder. This adds Polypheny to the applications overview.  After Polypheny-DB has been started, it adds itself to the system tray. 
 
 ### Linux
-We provide binaries for `.deb` and `.rpm` systems. These binaries come with systemd scripts for controlling Polypheny-DB. Please check the manual of your Linux distribution on how to install the `.deb` or `.rpm` file.
+We [provide](https://github.com/polypheny/Polypheny-DB/releases/latest) binaries for `.deb` and `.rpm` systems. These binaries come with systemd scripts for controlling Polypheny-DB. Please check the manual of your Linux distribution on how to install the `.deb` or `.rpm` file.
 
 ### Other
 Please use the `.jar` file provided on the [release page](https://github.com/polypheny/Polypheny-DB/releases/latest). Polypheny-DB requires a Java runtime version 11 or higher.
