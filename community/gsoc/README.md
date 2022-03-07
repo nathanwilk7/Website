@@ -5,9 +5,6 @@ title: Google Summer of Code
 
 Welcome to the Polypheny [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) 2022 project page.
 
-Please note that our application for GSoC 2022 is currently under review at Google.
-{:.message}
-
 * this unordered seed list will be replaced by toc as unordered list
 {:toc}
 
