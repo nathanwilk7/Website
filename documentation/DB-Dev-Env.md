@@ -5,6 +5,10 @@ title: DB Development Environment
 
 This guideline describes how to set up Polypheny-DB in an IDE.
 
+## Prerequisites
+You need a Java JDK in version 11 or higher. Furthermore, we recommend setting up Docker since it makes the deployment of stores more seamless. Please consult [this](/documentation/Stores/Docker/) on how to set up Docker for Polypheny-DB and configure the Docker-based data store deployment.
+
+
 ## Using IntelliJ
 1. Fork and checkout Polypheny-DB
 2. Import the project by opening the folder you have just checkout in IntelliJ.
@@ -27,4 +31,4 @@ If you would like to reset the catalog (and thus Polypheny) you can use the argu
 
 
 ## Polypheny-UI
-There is no need to manually set up the UI if you do not plan to work at the UI. Polypheny-DB pulls the latest version of the UI in the build process. If you would like to work on the Polypheny-UI, please follow [this tutorial](UI-Dev-Env).
+There is no need to manually set up the UI if you do not plan to work at the UI. Polypheny-DB pulls the latest version of the UI in the build process. If you would like to work on the Polypheny-UI, please follow [this tutorial](/documentation/UI-Dev-Env/).
