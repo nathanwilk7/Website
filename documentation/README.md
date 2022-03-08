@@ -52,6 +52,7 @@ Here you should be able to find everything you need to know to use and interact 
 * **[Logging]** --- Dealing with the logger.
 * **[Documentation Guidelines]** --- What and how to document.
 * **[Dependency Management]** --- How we deal with dependencies.
+* **[DB Development Environment]** --- Setup a Polypheny-DB in an IDE.
 * **[UI Development Environment]** --- Setup a Polypheny-UI development environment.
 * **[Adapter Development]** --- Guidline for developing data store and data source adapters.
 {:.related-posts.faded}
@@ -83,6 +84,7 @@ Here you should be able to find everything you need to know to use and interact 
 [Logging]: Logging.md
 [Documentation Guidelines]: Documentation.md
 [Dependency Management]: Dependencies.md
+[DB Development Environment]: DB-Dev-Env.md
 [UI Development Environment]: UI-Dev-Env.md
 [Adapter Development]: AdapterDev.md
 
