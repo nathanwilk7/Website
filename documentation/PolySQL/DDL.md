@@ -79,9 +79,12 @@ alterStatement:
      | ALTER TABLE [ schemaName . ] tableName DROP FOREIGN KEY foreignKeyName
      | ALTER TABLE [ schemaName . ] tableName ADD [UNIQUE] INDEX indexName ON ( columnName | '(' columnName [ , columnName ]* ')' ) [ USING indexMethod ] [ ON STORE storeUniqueName ]
      | ALTER TABLE [ schemaName . ] tableName DROP INDEX indexName
-     | ALTER TABLE [ schemaName . ] tableName ADD PLACEMENT [( columnName | '(' columnName [ , columnName ]* ')' )] ON STORE storeUniqueName [ WITH PARTITIONS '(' partitionName [ , partitionName ]* ')' ]
+     | ALTER TABLE [ schemaName . ] tableName ADD PLACEMENT [( columnName | '(' columnName [ , columnName ]* ')' )] ON STORE storeUniqueName 
+     [ SET placementPropertyName placementPropertyValue [ , placementPropertyName placementPropertyValue ]* ] [ WITH PARTITIONS '(' partitionName [ , partitionName ]* ')' ]
      | ALTER TABLE [ schemaName . ] tableName MODIFY PLACEMENT ( ADD | DROP ) COLUMN columnName ON STORE storeUniqueName
-     | ALTER TABLE [ schemaName . ] tableName MODIFY PLACEMENT '(' columnName [ , columnName ]* ')' ON STORE storeUniqueName [ WITH PARTITIONS '(' partitionName [ , partitionName ]* ')' ]
+     | ALTER TABLE [ schemaName . ] tableName MODIFY PLACEMENT ON STORE storeUniqueName SET placementPropertyName placementPropertyValue [ , placementPropertyName placementPropertyValue ]*
+     | ALTER TABLE [ schemaName . ] tableName MODIFY PLACEMENT '(' columnName [ , columnName ]* ')' ON STORE storeUniqueName 
+     [ SET placementPropertyName placementPropertyValue [ , placementPropertyName placementPropertyValue ]* ] [ WITH PARTITIONS '(' partitionName [ , partitionName ]* ')' ]
      | ALTER TABLE [ schemaName . ] tableName DROP PLACEMENT ON STORE storeUniqueName
      | ALTER TABLE [ schemaName . ] tableName PARTITION BY ( HASH | RANGE | LIST) '(' columnName ')' [ PARTITIONS numPartitions | WITH '(' partitionName1, partitionName2 [, partitionNameN]* ')' ]
      | ALTER TABLE [ schemaName . ] tableName MERGE PARTITIONS

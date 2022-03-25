@@ -61,6 +61,7 @@ select:
       [ GROUP BY { groupItem [, groupItem ]* } ]
       [ HAVING booleanExpression ]
       [ WINDOW windowName AS windowSpec [, windowName AS windowSpec ]* ]
+      [ WITH FRESHNESS freshnessSpec ]
 
 selectWithoutFrom:
       SELECT [ ALL | DISTINCT ]
@@ -121,6 +122,23 @@ windowSpec:
       |   ROWS numericExpression { PRECEDING | FOLLOWING }
       ]
       ')'
+
+
+freshnessSpec:
+      TIMESTAMP 'timestampExpression'
+  |   
+      timeUnit
+      (
+                  SECOND
+            |
+                  MINUTE
+            |
+                  HOUR
+      )
+      
+   |
+      numericExpression'%'
+
 {% endhighlight %}
 
 
