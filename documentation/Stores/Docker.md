@@ -11,6 +11,10 @@ Docker allows the automated setup and execution of preconfigured software packet
 
 More information about Docker can be found [here](https://www.docker.com/).
 
+Install Docker on your system in case you have not already done so. Then download [this docker-compose file](https://raw.githubusercontent.com/polypheny/Polypheny-DB/master/docker-compose.yml), open a terminal, navigate to the file you have just downloaded and execute `docker-compose up -d`.
+{:.note title="tl;dr"}
+
+
 ## Install Docker
 Docker is available for all major operating systems. 
 
@@ -22,13 +26,16 @@ Docker is available for all major operating systems.
 
 
 ## Connect Docker with Polypheny-DB
-The easiest approach to setup Docker with Polypheny-DB is by using the [docker-remote-api-tls](https://github.com/kekru/docker-remote-api-tls) container. This Container exposes the Docker Remote API. The API is secure and requires clients to authenticate using a TLS client certificat. The required certificate is created by the container on start up. 
+The easiest approach to setup Docker with Polypheny-DB is by using the [docker-remote-api-tls](https://github.com/kekru/docker-remote-api-tls) container. This Container exposes the Docker Remote API. The API is secure and requires clients to authenticate using a TLS client certificate. The required certificate is created by the container on start up. Besides deploying the container, no further manual action is required to setup the [docker-remote-api-tls](https://github.com/kekru/docker-remote-api-tls) container.  
 
 Before deploying the connector container, make sure that there is a `certs` folder in the `POLYPHENY_HOME` directory (defaults to `~/.polypheny/`).
 {:.note title="Attention"}
 
 ### Using Docker Compose
-Polypheny-DB comes with a Docker compose file containing an example configuration of this container. The `docker-compose.yml` file can be found in the root directory of Polypheny-DB. 
+Polypheny-DB comes with a Docker compose file containing an example configuration of this container. The `docker-compose.yml` file can be found in the root directory of Polypheny-DB.
+
+If you downloaded the Polypheny-DB public release, you can simply create a file called `docker-compose.yml` anywhere on your system and copy the file content from below into it.  
+{:.note title="Polypheny-DB public release"}
 
 ~~~yml
 # file: `docker-compose.yml`
@@ -48,12 +55,12 @@ services:
             - /var/run/docker.sock:/var/run/docker.sock:ro
 ~~~
 
-*For security reason it is highly recommended changing [supersecret] to something more secure.*
+*For security reason, it is highly recommended changing [supersecret] to something more secure.*
 
 When running docker-compose using `sudo`, make sure to replace `~/.polypheny/certs/localhost` with the absolut path: `/home/[user]/.polypheny/certs/localhost` (only when not using the `POLYPHENY_HOME` system variable)
 {:.note title="Attention"}
 
-Most Docker installations also install [docker-compose](https://docs.docker.com/compose/), which automates a lot of steps when configuring Docker. 
+Most Docker installations also install [docker-compose](https://docs.docker.com/compose/), which automates the deployment of Docker containers. 
 When docker-compose is installed, one can just start the special container by navigating in the folder of the docker-compose.yml file and execute it by running:
 
 ~~~
@@ -76,10 +83,20 @@ docker run -d \
     kekru/docker-remote-api-tls:v0.3.0
 ~~~
 
-*For security reason it is highly recommended changing [supersecret] to something different before deploying.*
+*For security reason, it is highly recommended changing [supersecret] to something different before deploying.*
 
 When running Docker using `sudo` without using a dedicated `POLYPHENY_HOME` system variable, `${POLYPHENY_HOME:-~}/.polypheny/certs/localhost` should be replaced with `/home/[user]/.polypheny/certs/localhost`.
 {:.note title="Attention"}
+
+### Validate that the docker-remote-api-tls container runs
+
+To validate that the container runs properly, all containers can be listed with the following command:
+```
+docker ps -a
+or
+sudo docker ps -a
+```
+In the column NAMES there should be a container called polypheny-connector and the if running correctly the corresponding status is: **Up \<time since running> (healthy)**. If it keeps restarting, refer to the [troubleshooting section](#troubleshooting).
 
 
 ## Validate Connection and Deploy Data Stores
@@ -100,9 +117,16 @@ When everything has been set up correctly, the remote can be added in the UI by 
 ## Troubleshooting
 * **Starting the connector container fails. No certificates in the `~/.polypheny/certs/` folder.**
   
-  If there is already a **localhost** or **[ip-of-remote]** folder, try deleting it and run `docker-compose up -d` or execute the Docker run command again. 
-  When using a Unix operating system, one can also try to set the access rights to the certs folder:
+  To view a log of the polypheny-adaptor container, use the following command:
   ```
-  sudo chmod -R 770 .polypheny/certs/
-  sudo chown -R ubuntu:docker .polypheny/certs/
+  docker logs --tail 50 --follow --timestamps polypheny-connector
+  or 
+  sudo docker logs --tail 50 --follow --timestamps polypheny-connector
   ```
+  If there are error messages that contain: **No certificates in the `~/.polypheny/certs/` folder** try the following:
+  * Check the `~/.polypheny/certs/` folder. If it contains a **localhost** or **[ip-of-remote]** folder, try deleting it and run `docker-compose up -d` or execute the Docker run command again. 
+  * When using a Unix operating system, one can also try to set the access rights to the `certs` folder:
+    ```
+    sudo chmod -R 770 .polypheny/certs/
+    sudo chown -R ubuntu:docker .polypheny/certs/
+    ```
