@@ -7,9 +7,9 @@ This page gives an overview on views and materialized views in Polypheny.  For i
 
 
 ## Views
-A view is a logical entity representing the result of a query. They can be queried and joined like other entities.  Views do not store the data physically. This means, the query plan of a query involving a view is extended by the definition of the view.
+A view is a logical entity representing the result of a query. They can be queried and joined like other entities.  Views do not store the data physically. This means that the query plan of a query involving a view is extended by the definition of the view.
 
-Views are read-only. Furthermore, the support for schema modifications are limited for all entities used in a view. It is possible to have views involving other views and materialized views.
+Views are read-only. Furthermore, the support for schema modifications is limited for all entities used in a view. It is possible to have views involving other views and materialized views.
 
 
 ## Materialized Views

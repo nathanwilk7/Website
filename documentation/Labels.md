@@ -10,7 +10,7 @@ This guideline describes the best practices related to using Github Labels for I
 
 ## Note
 
-The procedure described in this guideline does only apply to Polypheny-DB and not to the other projects.
+The procedure described in this guideline only applies to Polypheny-DB and not to the other projects.
 
 ## Label categories
 

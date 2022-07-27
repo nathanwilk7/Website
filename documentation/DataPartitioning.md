@@ -12,7 +12,7 @@ Data partitioning is a common concept in Database Management Systems (DBMS) to s
 ## Replication
 Polypheny-DB allows storing an entity on multiple data stores. This allows optimizing for different workloads, since Polypheny-DB always selects the data store with the best characteristics for executing a query. By exploiting the advantages of the available data stores, Polypheny is able to provide the best possible performance for heterogeneous workloads. 
 
-In the Polypheny context, such the assignment of a full replica to a data store is called *Full Placement*.
+In the Polypheny context, the assignment of a full replica to a data store is called *Full Placement*.
 
 
 

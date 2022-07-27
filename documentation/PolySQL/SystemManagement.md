@@ -3,7 +3,7 @@ layout: plain
 title: System Management
 ---
 
-Polypheny puts the concept of polyglot persistence on a new level by allowing not only allowing to query and manipulate data using different languages but also managing the system. This page gives an overview on available commands for managing the system using special DDL statements.
+Polypheny puts the concept of polyglot persistence on a new level by allowing not only querying and manipulating data using different languages but also managing the system. This page gives an overview on available commands for managing the system using special DDL statements.
 
 * this unordered seed list will be replaced by toc as unordered list
 {:toc}

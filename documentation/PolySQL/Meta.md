@@ -1,6 +1,6 @@
 ---
 layout: plain
-title: Mulimedia Metadata
+title: Multimedia Metadata
 ---
 
 The META function allows to inspect data stored in columns of type `IMAGE`, `SOUND` and `VIDEO`.
